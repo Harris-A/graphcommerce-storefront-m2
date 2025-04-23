@@ -19,6 +19,7 @@ import { Button, Container, Typography } from '@mui/material'
 import type { LayoutNavigationProps } from '../components'
 import { LayoutDocument, LayoutNavigation } from '../components'
 import { graphqlSharedClient, graphqlSsrClient } from '../lib/graphql/graphqlSsrClient'
+import AdvertGrid from '../components/AdvertGrid/AdvertGrid'
 
 type Props = {}
 type RouteProps = { url: string }
@@ -90,13 +91,17 @@ function CmsPage(props: Props) {
         gutterBottom
         sx={{
           textAlign: 'center',
-          textTransform: 'uppercase',
-          fontSize: { xs: 36, md: 32 },
+          textTransform: 'capitalize',
+          fontSize: { xs: 22, md: 42 },
+          marginTop: { xs: -4, md: -8 },
         }}
       >
         Level up your fit
       </Typography>
 
+      <Container maxWidth="lg" sx={{ mb: 4 }}>
+        <AdvertGrid />
+      </Container>
     </>
   )
 }
