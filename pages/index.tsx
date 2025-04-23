@@ -46,14 +46,14 @@ function CmsPage(props: Props) {
 
       <HeroBanner
         pageLinks={
-          <Button href='/men/art' variant='outlined' size='large' color='inherit'>
-            Shop Art
+          <Button href='/what-is-new' variant='outlined' size='large' color='inherit' sx={{ mr: 2 }}>
+            Gear up now
           </Button>
         }
-        videoSrc='https://media.graphassets.com/UNmtIZmWSgmnpUAWcAk0'
+        videoSrc='/home-promo.mp4'
         sx={(theme) => ({
           '& .HeroBanner-copy': {
-            minHeight: { xs: 'min(70vh,600px)', md: 'min(70vh,1080px)' },
+            minHeight: { xs: 'min(80vh,600px)', md: 'min(80vh,1080px)' },
             [theme.breakpoints.up('sm')]: {
               padding: theme.spacings.xl,
               justifyItems: 'start',
@@ -64,9 +64,9 @@ function CmsPage(props: Props) {
           },
         })}
       >
-        <Typography variant='overline' gutterBottom>
+        {/*<Typography variant='overline' gutterBottom>
           A journey through creativity
-        </Typography>
+        </Typography>*/}
         <Typography
           variant='h1'
           sx={(theme) => ({
@@ -80,9 +80,23 @@ function CmsPage(props: Props) {
             },
           })}
         >
-          <strong>Discover</strong> beauty beyond boundaries.
+          <strong>Chase limits</strong> own the look
         </Typography>
+
       </HeroBanner>
+
+      <Typography
+        variant="h2"
+        gutterBottom
+        sx={{
+          textAlign: 'center',
+          textTransform: 'uppercase',
+          fontSize: { xs: 36, md: 32 },
+        }}
+      >
+        Level up your fit
+      </Typography>
+
     </>
   )
 }
