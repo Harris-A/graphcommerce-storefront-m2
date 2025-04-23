@@ -41,8 +41,8 @@ const lightPalette: PaletteOptions = {
     hoverOpacity: 0.12,
   },
   text: {
-    primary: '#0F0F10',
-    secondary: '#03031755',
+    primary: '#1F1F1F',
+    secondary: '#666666',
     disabled: '#03031735',
   },
 }
