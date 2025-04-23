@@ -2251,6 +2251,7 @@ __metadata:
     graphql: "npm:^16.10.0"
     next: "npm:15.1.0"
     next-sitemap: "npm:4.2.3"
+    po-loader: "npm:^0.7.0"
     prettier: "npm:^3"
     react: "npm:^18.3.1"
     react-dom: "npm:^18.3.1"
@@ -10682,6 +10683,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"loader-utils@npm:^3.2.0":
+  version: 3.3.1
+  resolution: "loader-utils@npm:3.3.1"
+  checksum: 10c0/f2af4eb185ac5bf7e56e1337b666f90744e9f443861ac521b48f093fb9e8347f191c8960b4388a3365147d218913bc23421234e7788db69f385bacfefa0b4758
+  languageName: node
+  linkType: hard
+
 "localforage@npm:1.10.0":
   version: 1.10.0
   resolution: "localforage@npm:1.10.0"
@@ -12161,6 +12169,17 @@ __metadata:
   version: 8.0.0
   resolution: "pluralize@npm:8.0.0"
   checksum: 10c0/2044cfc34b2e8c88b73379ea4a36fc577db04f651c2909041b054c981cd863dd5373ebd030123ab058d194ae615d3a97cfdac653991e499d10caf592e8b3dc33
+  languageName: node
+  linkType: hard
+
+"po-loader@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "po-loader@npm:0.7.0"
+  dependencies:
+    loader-utils: "npm:^3.2.0"
+  peerDependencies:
+    po2json: ">=1.0.0-beta-3"
+  checksum: 10c0/ed6850728eaa27d237a3a041cf8197d48f6ac27c05f909319463208cb8f616e4cb7728f56300b4c985898f86f710c62897fc6367ee1f8a63dff7196170cc4264
   languageName: node
   linkType: hard
 
