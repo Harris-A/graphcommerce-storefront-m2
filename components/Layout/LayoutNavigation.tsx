@@ -49,17 +49,17 @@ export function LayoutNavigation(props: LayoutNavigationProps) {
         selection={selection}
         items={useMemoDeep(
           () => [
-            { id: 'home', name: <Trans id='Home' />, href: '/' },
-            {
+            // { id: 'home', name: <Trans id='Home' />, href: '/' },
+             {
               id: 'manual-item-one',
               href: `/${menu?.items?.[0]?.children?.[0]?.url_path}`,
               name: menu?.items?.[0]?.children?.[0]?.name ?? '',
             },
-            {
+            /*{
               id: 'manual-item-two',
               href: `/${menu?.items?.[0]?.children?.[1]?.url_path}`,
               name: menu?.items?.[0]?.children?.[1]?.name ?? '',
-            },
+            },*/
             ...magentoMenuToNavigation(menu, true),
 
             <Divider sx={(theme) => ({ my: theme.spacings.xs })} />,
