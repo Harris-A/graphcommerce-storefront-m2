@@ -1,4 +1,4 @@
-import { Typography, Button } from '@mui/material';
+import { Typography } from '@mui/material';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
@@ -11,7 +11,7 @@ const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
   padding: theme.spacing(1),
   textAlign: 'center',
-  color: (theme.vars ?? theme).palette.text.secondary,
+  color: theme.palette.text.secondary,
   ...theme.applyStyles('dark', {
     backgroundColor: '#1A2027',
   }),
@@ -24,16 +24,6 @@ const StyledImg = styled('img')({
   display: 'block',
   objectFit: 'cover',
 });
-
-const StyledButton = styled(Button)({
-  position: { xs: 'absolute' },
-  bottom: { xs: '42%', sm: '42%', md:'58%' },
-  left: '10',
-  fontSize: '1rem',
-  color: '#fff',
-  background: '#97CB0E',
-  textTransform: 'uppercase',
-})
 
 export default function BasicGrid() {
   return (
@@ -64,7 +54,6 @@ export default function BasicGrid() {
             >
               Pace yourself
             </Typography>
-            <StyledButton>shop</StyledButton>
           </Item>
         </Grid>
         <Grid item xs={4}>
