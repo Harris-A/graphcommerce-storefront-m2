@@ -1,7 +1,7 @@
 import type { PageOptions } from '@graphcommerce/framer-next-pages'
 import { Image } from '@graphcommerce/image'
 import { getCartDisabled, useCrosssellItems } from '@graphcommerce/magento-cart'
-import { AddProductsToCartForm, ProductScroller } from '@graphcommerce/magento-product'
+import { AddProductsToCartForm, ProductListItemType, ProductScroller } from '@graphcommerce/magento-product'
 import { PageMeta, StoreConfigDocument } from '@graphcommerce/magento-store'
 import type { GetStaticProps } from '@graphcommerce/next-ui'
 import { Button, IconSvg, iconChevronRight, responsiveVal } from '@graphcommerce/next-ui'
@@ -130,7 +130,7 @@ function CheckoutAdded() {
           >
             <ProductScroller
               productListRenderer={productListRenderer}
-              items={crossSellItems}
+              items={crossSellItems as ProductListItemType[]}
               sx={(theme) => ({ mb: theme.page.vertical })}
             />
           </AddProductsToCartForm>
