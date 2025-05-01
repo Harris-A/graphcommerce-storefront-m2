@@ -9,7 +9,7 @@ const config = {
   robotsAllow: false,
   limitSsg: true,
 
-  magentoEndpoint: 'http://vanilla.gtech.co.uk/graphql',
+  magentoEndpoint: 'https://vanilla.gtech.co.uk/graphql',
   magentoVersion: 247,
   canonicalBaseUrl: 'https://vanilla.gtech.co.uk',
   storefront: [
