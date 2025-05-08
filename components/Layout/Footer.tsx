@@ -16,7 +16,7 @@ export function Footer() {
   return (
     <FooterBase
       socialLinks={<></>}
-      storeSwitcher={<StoreSwitcherButton />}
+      /* storeSwitcher={<StoreSwitcherButton />} */
       customerService={
         <Button href='/service' variant='pill'>
           <Trans>Customer Service</Trans>
@@ -41,7 +41,10 @@ export function Footer() {
             </Link>
           )}
           <Link href='/service/newsletter' color='textPrimary' underline='always'>
-            <Trans>Newletter</Trans>
+            <Trans>Newsletter</Trans>
+          </Link>
+          <Link href='/about/about-us' color='textPrimary' underline='always'>
+            <Trans>About Us</Trans>
           </Link>
         </>
       }
